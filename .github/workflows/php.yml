@@ -29,7 +29,6 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v6
       with: 
           image: rowna04/docker_iti
-          registry: docker.io
           dockerfile: Dockerfile
           username: "${{ secrets.DOCKER_NAME }}"
           password: "${{ secrets.DOCKER_PASS }}"
