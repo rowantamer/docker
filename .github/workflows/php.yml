@@ -31,6 +31,6 @@ jobs:
           image: rowna04/docker_iti
           registry: docker.io
           dockerfile: Dockerfile
-          username: rowna04
-          password: 221199Rowan@
+          username: "${{ secrets.DOCKER_NAME }}"
+          password: "${{ secrets.DOCKER_PW }}"
           tags: latest
